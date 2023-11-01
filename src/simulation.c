@@ -291,33 +291,6 @@ double** simulate(char* known_cards[], int num_known_cards, int num_players, int
 }
 
 
-
-/**
-        *  @brief  Obtenció de probabilitat de victòria, derrota i empat de cada jugador,
-        * des d'un punt de vista d'espectador. L'espectador coneix les cartes de tots els
-        * jugadors i de la taula.
-        * 
-        * Les probabilitats s'extreuen a partir de la simulació de partides de poker.
-        * Les partides es juguen fixant totes les cartes dels jugadors en actiu i les de ¡
-        * la taula, descartant de la baralla les cartes dels jugadors que han fet "fold" i
-        * seleccionant de manera aleatoria les cartes de la taula que encara no han aparegut.
-        *
-        *  
-        * @param player_cards Cartes dels jugadors en actiu. players_cards[0..1] = cartes primer jugador,
-        * players_cards[2..3] = cartes segon jugador, etc.
-        * @param board_cards Cartes de la taula (comunes).
-        * @param discarded_cards Cartes descartades. Són les cartes que estaven a la ma dels jugadors que
-        * ja no juguen (han fet "fold").
-        * @param num_discarded_cards Quantitat de cartes descartades.
-        * @param num_board_cards Quantitat de cartes a la taula (comunes).
-        * @param num_players Quanitat de jugadors.
-        * @param num_games Quantitat de partides que es volen simular per extreure'n les probabilitats.
-        * @return Matriu de tantes files com jugadors i tres de columnes. A la fila "i" es troben les probabilitats
-        * de victòria (rtn[i][0]), derrota (rtn[i][1]) i empat (rtn[i][2]) del jugador "i".
-*/
-
-
-
 /**
  * @brief Calculation of the probability of winning, losing, and tying for each player from a spectator's perspective.
  * The spectator is aware of the cards held by all the players and those on the table.
