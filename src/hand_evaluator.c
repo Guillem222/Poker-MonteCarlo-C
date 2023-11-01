@@ -159,7 +159,6 @@ int create_lookup_tables(const char *csv_file){
  * @param prime_product_score_table (Global) Array containing the scores of hands with repeated ranks.
  * @return Score or rank of the equivalence class to which the hand in cards[] belongs.
  */
-
 unsigned short get_score(int cards[]){
 
     if((cards[0] & cards[1] & cards[2] & cards[3] & cards[4] & 0xF000)){ // it is flush? SF, F
