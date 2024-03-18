@@ -149,6 +149,7 @@ In the following table you can see the time performance of the hand evaluator al
 |50 000 000| 2 046 058|
 |100 000 000 |4 078 959|
 
+This benchmark has been run in a machine with a Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz.
 
 ## Simulator benchmark
 In this table you can see the time performance of the simulator algorithm.
@@ -166,6 +167,8 @@ In this table you can see the time performance of the simulator algorithm.
 - **A**: games with 2 players and no established community cards.
 - **B**: games with 4 players and 5 established community cards.
 - **C**: games with 4 players and no established community cards.
+
+This benchmark has been run in a machine with a Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz.
 
 Remember the *Central Limit Theorem*, and keep in mind that achieving 2 digits of precision in this kind of problem is usually enoguh. Thus, executing 100 000 simulations in **0.5 seconds** should be adequate.
 
