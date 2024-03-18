@@ -6,7 +6,10 @@ The algorithm provides, from the player's viewpoint, probabilities of victory, d
 This repository consists of three main parts: the Hand Evaluator, based on the Cactus Kev design [1]; the simulation algorithm, based on Monte Carlo, which computes the probabilities; and two examples, one from the player's perspective and one from the spectator's perspective.
 
 # How to use it
-You can obtain the probabilities by using the `simulate` and `simulate_spectator` functions. The approach, arguments, and return values are thoroughly explained in the comment header section of the code, see file `/src/simulation.c`. To understand how to use these functions, refer to the self-explanatory examples provided.
+
+First you will need to initialize the simulator, this step builds all the tables and data structures needed for the hand evaluation process. To do so, just call `init_simulator`, providing the path to the csv file with the *class equivalence table*, see `data/eq_classes.csv` and [1] for further explanation.
+
+Then, you can obtain the probabilities by using the `simulate` and `simulate_spectator` functions. The approach, arguments, and return values are thoroughly explained in the comment header section of the code, see file `/src/simulation.c`. To understand how to use these functions, refer to the self-explanatory examples provided.
 
 # Output examples
 (Following examples refer to different game settlements.)
@@ -152,7 +155,7 @@ Remember the *Central Limit Theorem*, and keep in mind that achieving 2 digits o
 # Notes
 - The correct use of the algorithm is left to the users. There hasn't been an implementation of a check to verify if the inputs provided by the user are correct and make sense. Hence, you can assign to two different players the same cards.
 
-- The design of the hand evaluator is from Catus Kev, but in the absence of the code that builds the tables he uses, I had personally to implemented the algorithms to create those tables.
+- The design of the hand evaluator is from Catus Kev, but in the absence of the code that builds the tables he uses, I had personally implemented the algorithms to create those tables.
 
 - To see an animation of how the simulation works, please watch the video about the larger project of which this work was a part, [2] (minute 1:21). 
 
