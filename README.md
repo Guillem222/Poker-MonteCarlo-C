@@ -134,7 +134,7 @@ Here it is a breakdown of the use of memory in the hand evaluator.
 | Non-unique rank hands scores | `unsigned short`  | 4888   | 9776 |
 |**TOTAL**|||61076|
 
-To know what the concepts that appears in this table mean, see [1].
+To understand the concepts that appear in this table, see [1].
 
 ## Hand evaluator benchmark
 In the following table you can see the time performance of the hand evaluator algorithm.
