@@ -73,7 +73,7 @@ int groups_5[PERMUTATIONS][5] =
  * [0][...] represents the user's probabilities, and [1][3..11] represents the opponent's probabilities.
  * [1][0..2] are not used because they are the complementary of the user's.
  */
-double** simulate(char* known_cards[], int num_known_cards, int num_players, int num_games){
+double** simulate_player(char* known_cards[], int num_known_cards, int num_players, int num_games){
 
 
 

@@ -47,7 +47,7 @@ int main(){
                                 };
 
 
-        double** probs = simulate(known_cards,num_known_cards,num_players,num_games);        
+        double** probs = simulate_player(known_cards,num_known_cards,num_players,num_games);        
         
         printf("                              ----  TEST 1  ----                              \n");
         print_probabilities(probs); 
@@ -77,7 +77,7 @@ int main(){
                                 };
 
 
-        double** probs = simulate(known_cards,num_known_cards,num_players,num_games);        
+        double** probs = simulate_player(known_cards,num_known_cards,num_players,num_games);        
         
         printf("                              ----  TEST 2  ----                              \n");
         print_probabilities(probs); 
@@ -107,7 +107,7 @@ int main(){
                                 };
 
 
-        double** probs = simulate(known_cards,num_known_cards,num_players,num_games);        
+        double** probs = simulate_player(known_cards,num_known_cards,num_players,num_games);        
         
         printf("                              ----  TEST 3  ----                              \n");
         print_probabilities(probs); 
@@ -137,7 +137,7 @@ int main(){
                                 };
 
 
-        double** probs = simulate(known_cards,num_known_cards,num_players,num_games);        
+        double** probs = simulate_player(known_cards,num_known_cards,num_players,num_games);        
         
         printf("                              ----  TEST 4  ----                              \n");
         print_probabilities(probs); 
