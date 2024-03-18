@@ -12,8 +12,14 @@ First you will need to initialize the simulator, this step builds all the tables
 Then, you can obtain the probabilities by using the `simulate` and `simulate_spectator` functions. The approach, arguments, and return values are thoroughly explained in the comment header section of the code, see file `/src/simulation.c`. To understand how to use these functions, refer to the self-explanatory examples provided.
 
 # Output examples
-(Following examples refer to different game settlements.)
-### Player's perspective
+## Player's perspective
+### Game setup:
+- **Number of players**: 5
+- **Player private cards:** AH, JS
+- **Community cards:** 2C, JD, QH
+- **Number of simulations:** 100 000
+
+### Output:
 ```
  - Player - 
 
@@ -45,8 +51,18 @@ Then, you can obtain the probabilities by using the `simulate` and `simulate_spe
         High Card       : 24.140000% 
 ```
 
-### Spectator's perspective
+## Spectator's perspective
+### Game setup:
+- **Number of players**: 3
+- **Private cards:**
+    - **Player 0:** 4S, 4D
+    - **Player 1:** AC, JD
+    - **Player 2:** 2C, 2S
+- **Community cards:** QH, AD, KD, 3S
+- **Discarded cards:** 7S, 2H, KC, TC
+- **Number of simulations:** 100 000
 
+### Output:
 ```
 - Player 0: 
 
@@ -117,6 +133,7 @@ Here it is a breakdown of the use of memory in the hand evaluator.
 | *Flushes* scores | `unsigned short`  | 7937   | 15874 |
 | Non-unique rank hands scores | `unsigned short`  | 4888   | 9776 |
 |**TOTAL**|||61076|
+
 To know what the concepts that appears in this table mean, see [1].
 
 ## Hand evaluator benchmark
